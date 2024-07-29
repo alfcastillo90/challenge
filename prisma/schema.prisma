@@ -9,10 +9,10 @@ datasource db {
 
 model Contract {
   id            Int      @id @default(autoincrement())
-  clientname    String
+  clientName    String
   email         String
-  initialdate   DateTime
-  accountNumber Int?
+  initialDate   DateTime
+  accountNumber String?
   amount        BigInt
-  currency      Int
+  currency      String
 }
